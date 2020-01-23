@@ -1,10 +1,9 @@
 # MEAN
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This project was generated with Angular v8.3.21, Node v10.16.2 and MongoDB shell version v4.2.2
 
 ## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Clone this repository, navigate and enter in directory and run `npm init`, after this, run `npm run dev` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
