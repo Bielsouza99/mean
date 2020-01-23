@@ -1,0 +1,37 @@
+<div class="row justify-content-center">
+    <div class="col-md-4 register-employee">
+        <div class="card card-outline-secondary">
+            <div class="card-header">
+                <h3 class="mb-0">Editar Funcionário</h3>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label for="inputNome">Nome</label>
+                        <input class="form-control" type="text" formControlName="nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">E-mail</label>
+                        <input type="text" class="form-control" formControlName="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputCargo">Cargo</label>
+                        <select (change)="updateProfile($event.target.value)" class="custom-select form-control" formControlName="cargo">
+                            <option value="">Escolha...</option>
+                        <option *ngFor="let employeeProfile of EmployeeProfile" value="{{employeeProfile}}">{{employeeProfile}}</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="inputTel">Telefone</label>
+                        <input type="tel" class="form-control" formControlName="telefone">
+                    </div>
+    
+                    <div class="form-group">
+                        <button class="btn btn-success btn-lg btn-block" type="submit">Atualizar</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
